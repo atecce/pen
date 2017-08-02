@@ -4,6 +4,3 @@
 [submodule ".vim/bundle/swift.vim"]
 	path = .vim/bundle/swift.vim
 	url = https://github.com/keith/swift.vim
-[submodule ".vim/bundle/vim-ps1"]
-	path = .vim/bundle/vim-ps1
-	url = https://github.com/PProvost/vim-ps1.git
