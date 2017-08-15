@@ -1,11 +1,8 @@
 #!/bin/bash
 
-function usage() {
-	echo "\nUsage: github_cloc <user> <repo>"
-}
-
 if [ $# -ne 2 ]; then
-	usage
+	printf "\nUsage: github_cloc <user> <dir>\n\n"
+	exit 1
 fi
 
 git clone https://github.com/$1/$2.git /tmp/$2 && cloc /tmp/$2 && rm -rf /tmp/$2
